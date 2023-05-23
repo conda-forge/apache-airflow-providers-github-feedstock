@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - pygithub !=1.58
-    - apache-airflow >=2.3.0
+    - apache-airflow >=2.4.0
 
 test:
   imports:
