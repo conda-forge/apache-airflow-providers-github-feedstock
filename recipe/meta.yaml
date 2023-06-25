@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-github" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-github-{{ version }}.tar.gz
-  sha256: 8c0a3a99c5d0f5646140a40d2027e5c8cf2d9e1c34bd6633fc25618fdf00283f
+  sha256: 24933aab7fbe490cdc28cd3983b8064981fca32f4f362efe3d416e7ee844efd2
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
-    - setuptools >=67.2.0
+    - python >=3.8
+    - setuptools >=67.2.0,<68.0.0
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - pygithub !=1.58
     - apache-airflow >=2.4.0
 
