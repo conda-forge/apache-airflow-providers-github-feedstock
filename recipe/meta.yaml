@@ -1,13 +1,13 @@
 {% set name = "apache-airflow-providers-github" %}
-{% set version = "2.7.0" %}
+{% set version = "2.8.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_github-{{ version }}.tar.gz
-  sha256: 0e80d36101c9e764ff142a28d56a1d5c274b7025dd88d3f7667e6a1234067915
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_github-{{ version }}.tar.gz
+  sha256: cc5aa07fd5dbdd415a05bc7aa6e431ce3c92359ecf982b614a1fbd8d3261d332
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - pygithub >=2.1.1
-    - apache-airflow >=2.8.0
+    - apache-airflow >=2.9.0
 
 test:
   imports:
