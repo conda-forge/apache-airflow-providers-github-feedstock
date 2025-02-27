@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.0
+    - flit-core ==3.10.1
     - pip
   run:
     - python >={{ python_min }},<4.dev0
-    - pygithub >=2.1.1
     - apache-airflow >=2.9.0
+    - pygithub >=2.1.1
 
 test:
   imports:
@@ -37,7 +37,7 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-github for Apache Airflow
   license: Apache-2.0
-  license_file: airflow/providers/github/LICENSE
+  license_file: src/airflow/providers/github/LICENSE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-github/stable/index.html
   dev_url: https://github.com/apache/airflow/
