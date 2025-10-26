@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-github" %}
-{% set version = "2.9.2" %}
+{% set version = "2.9.3" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_github-{{ version }}.tar.gz
-  sha256: 363a2781d66c76ab9ca7c7334c34ab82d8d302e31aaa2a76c82ecd214db787fd
+  sha256: b732df5018db1644087a9b1a6de4b7ed35ce0e2d678cc6acd155d85a1d3ee58a
 
 build:
   noarch: python
@@ -21,6 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
+    - apache-airflow-providers-common-compat >=1.8.0
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
     - pygithub >=2.1.1
