@@ -29,7 +29,7 @@ requirements:
 tests:
   - python:
       imports:
-        - airflow.providers.github
+      - airflow.providers.github
       pip_check: true
       python_version: ${{ python_min }}.*
 
